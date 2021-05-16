@@ -1,0 +1,1163 @@
+
+<!DOCTYPE html>
+    <head>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+          <link rel="stylesheet" href="css/popup.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript">
+    window.addEventListener(`resize`, event => {
+        if(window.innerWidth>1450)
+        {
+         $('.courusel-main').slick('refresh');   
+        }
+}, false);
+    var dataGlb;
+    $.ajax({
+  url: "procesing.php",
+  method: 'post',
+    data: {teachers: 'Текст'},
+  async: false,
+  success: function(data){
+    dataGlb = data;
+   
+ 
+
+    }
+        
+  
+});
+
+</script>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<meta charset="utf-8">
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<title> ЛабиринтУм</title>
+<!— Facebook Pixel Code —>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '911930949596035');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=911930949596035&ev=PageVie.."
+/></noscript>
+<!— End Facebook Pixel Code —>
+    </head>
+    <body>
+        
+        
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+     <div class="main-wrapper">
+             <header>
+           <div class="nav-container">
+                <div class="logo"><a href="index.html"><img src="img/logo.svg"></a></div>
+                               <div class="nav-menu">
+                    <div class="nav-menu-element">
+                        <a href="subjects.html">Предметы и стоимость</a>
+                    
+                    </div>
+                    <div class="nav-menu-element">
+                        <a href="teachers.html">Преподаватели</a>
+                        
+                    </div>
+                <div class="nav-menu-element">
+                    <a href="results.html">Результаты</a>
+                        
+                </div>
+                <div class="nav-menu-element">
+                    <a href="reviews.html">Отзывы</a>
+                       
+                </div>
+                <div class="nav-menu-element">
+                    <a href="#feedback">
+                        Контакты
+                    </a>
+                </div>
+                </div>
+                <div class="contacts">
+                    <div>
+                        <img src="img/tel.svg">
+                        +375 44 580-01-51
+                    
+                    </div>
+                    <div>
+                    +375 29 261-62-52
+                    </div>
+                </div>
+                <div class="burger">
+                    <label for="nav-trigger" class="lbl">
+                         <img src="img/Бургер меню.svg">
+                    </label>
+                </div>
+           </div>
+          
+          
+       </header>
+        <main>
+            
+    <div class="main-page">
+        <div class="main-info">
+             <div class="title-info">
+                 Репетиторский центр Натальи Басалай <span class="logical" style="font-family:OswaldRG">«ЛабиринтУм»</span>
+             </div>
+             <div class="slog-info">
+                 ПОДГОТОВКА К ЦТ НА <span class="logical" style="font-family:Oswald">85+ БАЛЛОВ</span> И ПОВЫШЕНИЕ УСПЕВАЕМОСТИ
+             </div>
+             <div class="opis-info">
+                 Занятия в мини-группах от 7р/час
+             </div>
+             
+             <div class="button scroll">
+
+                  Записаться
+             </div>
+           
+        </div>
+        <img id="person" src="img/person.png" alt="">
+
+        <div class="lessons">
+            <div class="header-lessons">
+                Наши<span class="logical">&#160предметы </span>
+            </div>
+            <div class="header-lessons-2">
+             Выберите подходящий вариант и рассчитайте стоимость занятий
+             </div>
+             <div class="info-lessons">
+                 При записи на 2 и более предмета предоставляется скидка 10-15% 
+             </div>
+                     <div class="slider-lessons">
+        <div class="slider-header"> 
+                Технические предметы
+          </div>
+        <div class="courusel-tech">
+ 
+
+          
+        </div>
+                      <div class="slider-header"> 
+                Языки
+          </div>
+                <div class="courusel-lang">
+
+
+        </div>
+        <div class="slider-header"> 
+                Гуманитарные предметы
+          </div>
+                <div class="courusel-gym">
+
+ 
+
+
+        </div>
+</div>
+             <div class="wrapper-lessons lesson-area">
+ 
+             </div>
+        </div>
+        <div class="teachers">
+         <div class="header-teachers">
+             Наши <span class="logical">преподаватели</span>
+         </div>
+         <div class="slider-cour">
+    <div class="courusel teachers-area">
+
+    </div>
+ </div>
+ <div class="slider-cour-main">
+     <div class="courusel-main teachers-area">
+ 
+     </div>
+  </div>
+    </div>
+        <div class="aboutUs">
+             <div class="header-aboutUs">Почему <span class="logical">именно мы</span>?</div>
+             <div class="row-aboutUs">
+                 <div class="block-aboutUs">
+                     <div class="head-block-aboutUs">
+                         1. Невысокая стоимость обучения
+                     </div>
+                     <div class="text-block-aboutUs">
+                         Стоимость занятий в мини-группах составляет 7 рублей
+                          за час в Минске ( 6 рублей за час для регионов)
+                     </div>
+                 </div>
+                 <div class="block-aboutUs">
+                     <div class="head-block-aboutUs">
+                        2. Сохраняется индивидуальный подход 
+                     </div>
+                     <div class="text-block-aboutUs">
+                         Даже в мини-группах у нас сохраняется форма индивидуального подхода, так как преподаватель уделяет время каждому.
+                     </div>
+                 </div>
+             </div>
+             <div class="row-aboutUs">
+                 <div class="block-aboutUs">
+                     <div class="head-block-aboutUs">
+                         3. Гибкость системы 
+                     </div>
+                     <div class="text-block-aboutUs">
+                         Удобный формат обучения для каждого! В группах или индивидуально, онлайн или вживую, подготовим к ЦТ или подтянем школьные знания.
+                     </div>
+                 </div>
+                 <div class="block-aboutUs">
+                     <div class="head-block-aboutUs">
+                         4. Опытные преподаватели
+                     </div>
+                     <div class="text-block-aboutUs">
+                         Все наши преподаватели — это высококвалифицированные специалисты и опытные педагоги.
+                     </div>
+                 </div>
+             </div>
+             <div class="row-aboutUs">
+                 <div class="block-aboutUs">
+                     <div class="head-block-aboutUs">
+                         5. Максимум практики
+                     </div>
+                     <div class="text-block-aboutUs">
+                         Мы нацелены на результат. Много решаем, рассматриваем алгоритмы решений, обходим типовые ловушки.
+                     </div>
+                 </div>
+                 <div class="block-aboutUs">
+                     <div class="head-block-aboutUs">
+                         6. Работаем с учениками любого уровня 
+                     </div>
+                     <div class="text-block-aboutUs">
+                         Мы начинаем работу как с детьми с низким уровнем знаний, так и с теми, кто рассчитывает на результат в 90-100 баллов.
+                     </div>
+                 </div>
+             </div>
+             <div class="button btnAboutUs scroll">Оставить заявку</div>
+        </div>
+        
+
+
+     <div class="results">
+         <div class="header-results">
+             Результаты наших <span class="logical">учеников</span>
+             
+         </div>
+         <div class="arrows" style="color: #4EAFF1;">
+            &#8592;	&#8594;
+         </div>
+                    <div class="result-adaptive-wrapper"  >
+                <div class="results-row-adaptive">
+                   
+               </div>
+            </div>
+ <!--        <div class="slider-cour-2">
+             <div class="courusel result-area">
+                      
+                  
+                         
+            
+         
+                 
+          </div>   
+     </div>
+ -->
+        
+         <div class="slider-cour-main-2">
+             <div class="courusel-main result-area">
+               
+
+             </div>
+          </div>
+            </div>
+
+         
+        
+         <div class="buttons-result"> 
+            <a href="results.html">
+             <div class="button-2 btn-2-slider" style="width: 270;">
+                 Больше результатов
+             </div>
+         </a>
+          <a href="reviews.html">
+             <div class="button-2 btn-2-slider" style="width: 270;">
+                 Смотреть отзывы
+             </div>
+            </a>
+         </div>
+             
+
+     </div>
+     
+    
+    
+    
+    <div class="contacts-section">
+         <div class="header-contacts">
+             Контакты
+         </div>
+         <div class="wrapper-contacts">
+             <div class="left-contacts">
+                 <div class="header-contacts-2">
+                     Телефоны:
+                 </div>
+                 <div class="telephones" style=" -webkit-text-fill-color: rgba(0, 0, 0, 1); 
+                 -webkit-opacity: 1;">
+                     <div style="-webkit-text-fill-color: rgba(0, 0, 0, 1); 
+                     -webkit-opacity: 1; ">
+                         +375 44 580-01-51
+                     </div>
+                     <div style="   -webkit-text-fill-color: rgba(0, 0, 0, 1); 
+                     -webkit-opacity: 1; ">
+                         +375 29 261-62-52
+                     </div>
+                 </div>
+                 <div class="header-contacts-2">
+                     Адреса филиалов
+                 </div>
+                 <div class="adres">
+                     <div>
+                         г. Минск, ул. Мельникайте, 2 
+                     </div>
+
+                     <div>
+                         г. Минск, ул. Хмелевского, 12А
+                     </div>
+                      <div>
+                         г. Ивацевичи, ул. Свердлова, 5 (здание ДОСААФ)
+                      </div>
+
+                       
+                 </div>
+             </div>
+             <div class="right-forms" id="feedback" >
+                 <input class="selected-name" id="name" type="text" placeholder="Ваше имя">
+                 <input class="selected-telephone"  id="telephone" type="text" placeholder="Ваш телефон">
+                 <div  class="box box-req" id="subject">
+                     <h3>Выберите предмет<span class="expand"><img src="img/swipe.svg" ></span></h3>
+                     <ul>
+                         <li>Математика</li>
+                         <li>Физика</li>
+                         <li>Русский язык</li>
+                         <li>Белорусский язык</li>
+                         <li>Физика</li>
+                         <li>Немецкий язык</li>
+                         <li>Обществоведение</li>
+                         <li>Химия</li>
+                         <li>Всемирная история</li>
+                         <li>История Беларуси</li>
+                         
+                     </ul>
+                 </div>
+                 <div  class="box box-req" id="class">
+                     <h3>Класс ребенка<span class="expand"><img src="img/swipe.svg" ></span></h3>
+                     <ul>
+                         <li>5</li>
+                         <li>6</li>
+                         <li>7</li>
+                         <li>8</li>
+                         <li>9</li>
+                         <li>10</li>
+                         <li>11</li>
+                         
+
+                         
+                     </ul>
+                 </div>
+                 <div class="error">Пожалуйста, заполните форму</div>
+                 <div class="button send-request send" style="margin-top: 15px">Оставить заявку </div>
+                 
+             </div>
+         </div>
+ </div>
+ <div id="map" >
+
+ </div>
+<div class="feedback feedback-index" >
+                <div class="feedback-header feedback-results">Оставьте заявку и мы ответим на все ваши вопросы</div>
+                <div class="feedback-forms">
+                    <input class="selected-name" type="text" id="name-adaptive" placeholder="Ваше имя">
+                    <input class="selected-telephone" id="telephone-adaptive" type="text" placeholder="Ваш телефон">
+                  <div class="box box-req" id="subject-adaptive">
+                     <h3>Выберите предмет<span class="expand"><img src="img/swipe.svg" ></span></h3>
+                     <ul>
+                         <li>Математика</li>
+                         <li>Физика</li>
+                         <li>Русский язык</li>
+                         <li>Белорусский язык</li>
+                         <li>Физика</li>
+                         <li>Немецкий язык</li>
+                         <li>Обществоведение</li>
+                         <li>Химия</li>
+                         <li>Всемирная история</li>
+                         <li>История Беларуси</li>
+                         
+                     </ul>
+                 </div>
+                    <div class="box box-req" id="class-adaptive">
+                        <h3>Класс ребенка<span class="expand"><img src="img/swipe.svg" ></span></h3>
+                        <ul>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            
+   
+                            
+                        </ul>
+                    </div>
+                    <div class="button box-btn send">Оставить заявку</div>
+                </div>
+                <div class="error">Пожалуйста, заполните форму</div>
+            </div>
+        </main>
+                    <div class="popup__overlay__msg hidden">
+                <div  class="order-form ">
+                  <div class="close"></div>
+                    <div class="popup-header" style="text-align: center;">Спасибо за заявку!<br> Мы свяжемся с вами в ближайшее время</div>
+                        <div class="button cls">
+                         Спасибо!
+                    </div>
+                    </div>
+
+
+
+               </div>
+                           <div class="popup__overlay__subject hidden">
+                <div  class="order-form ">
+                  <div class="close">+</div>
+                    <div class="popup-header">Выберите предмет и класс ребёнка</div>
+
+                    <div class="box-wrapp-2 request-subject">
+                                            <input class="selected-name " id="name-subject" type="text" placeholder="Ваше имя">
+                    <input class="selected-telephone" id="telephone-subject" type="text" placeholder="Ваш телефон">
+                        <div class="box box-req" id="class-subject">
+                            <h3>Класс ребенка<span class="expand"><img src="img/swipe.svg" ></span></h3>
+                            <ul>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="button send-pop-subject">
+                        Оставить заявку
+                    </div>
+                    <div class="error" style="position: absolute; top: 425px;">Пожалуйста, заполните форму</div>
+               </div>
+            </div>
+           
+          <footer>
+            <div class="footer-container">
+                               <div class="footer-column">
+                    <div class="footer-header">
+                        Навигация
+                    </div>
+                    <a href="index.html">
+                    <div class="footer-element">
+                        Главная
+                    </div>
+                </a>
+                    <a href="subjects.html">
+                    <div class="footer-element">
+                        Предметы и стоимость
+                    </div>
+                     </a>
+                        <a href="subjects.html">
+                    <div class="footer-element">
+                        Скидки
+                    </div>
+                     </a>
+                            <a href="teachers.html">
+                    <div class="footer-element">
+                        Наши преподаватели
+                    </div>
+                     </a>
+                            <a href="reviews.html">
+                    <div class="footer-element">
+                        Отзывы
+                    </div>
+                     </a>
+                    <a href="results.html">
+                     <div class="footer-element">
+                        Рузультаты
+                    </div>
+                </a>
+                <a href="index.html#feedback">
+                    <div class="footer-element">
+                        Контакты
+                    </div>
+                </a>
+                    <div class="footer-element socials">
+                        <a href="index.html">
+                        <img src="img/logo2.svg">
+                    </a>
+                    <a href="https://vk.com/labirintum_by">
+                        <img src="img/VK.svg">
+                    </a>
+                    <a href="https://ok.ru/labirintumby">
+                        <img src="img/OK.svg">
+                    </a>
+                    <a href="https://www.facebook.com/labirintumby/?__tn__=kC-R&eid=ARCv4OUrrTubTxMkOSdFLJX08kmgPwl_J581DQuBp3Jqzfm4VU5USEKQd67K6b0TXpNRfitP4OUoJKhA&hc_ref=ARSTg5E1NqhIUVhC3cF73vSbi0pULvCS0vML_fmkW0qF1X5wcJFAHHSLgVqR-4a7MWM&fref=nf">
+                        <img src="img/FB.svg">
+                    </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-header">
+                        Предметы
+                    </div>
+                    <div class="footer-element">
+                        Математика
+                    </div>
+                    <div class="footer-element">
+                        Физика
+                    </div>
+                    <div class="footer-element">
+                        Русский язык
+                    </div>
+                    <div class="footer-element">
+                        Английский язык
+                    </div>
+                    <div class="footer-element">
+                        Белорусский язык
+                    </div>
+                    <div class="footer-element">
+                        Химия
+                    </div>
+                    <div class="footer-element">
+                        Биология
+                    </div>
+                    <div class="footer-element">
+                        История Беларуси
+                    </div>
+                    <div class="footer-element">
+                        Обществоведение
+                    </div>
+                    <div class="footer-element">
+                        Немецкий язык
+                    </div>
+    
+                </div>
+                <div class="footer-column">
+                    <div class="footer-header">
+                        Телефоны
+                    </div>
+                    <div class="footer-element">
+                        +375 44 580-01-51
+                    </div>
+                    <div class="footer-element">
+                        +375 44 261-62-52
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer-header">
+                        Адреса филиалов:
+                    </div>
+                    <div class="footer-element">
+                        г. Минск, ул. Слободская, 101
+                    </div>
+                    <div class="footer-element">
+                        г. Минск, ул. Рафиева, 7
+                    </div>
+                    <div class="footer-element">
+                        г. Минск, ул. Хмелевского, 12А
+                    </div>
+                    <div class="footer-element">
+                        г. Ивацевичи, ул. Свердлова, 5 (здание ДОСААФ)
+                    </div>
+                    <div class="footer-element">
+                        г. Барановичи, ул. Горького, 29 (здание ДОСААФ)
+                    </div>
+                </div>
+            </div>
+                    <div class="footer-element socials-adaptive">
+                        <a href="index.html">
+                        <img src="img/logo2.svg">
+                    </a>
+                    <a href="https://vk.com/labirintum_by">
+                        <img src="img/VK.svg">
+                    </a>
+                    <a href="https://ok.ru/labirintumby">
+                        <img src="img/OK.svg">
+                    </a>
+                    <a href="https://www.facebook.com/labirintumby/?__tn__=kC-R&eid=ARCv4OUrrTubTxMkOSdFLJX08kmgPwl_J581DQuBp3Jqzfm4VU5USEKQd67K6b0TXpNRfitP4OUoJKhA&hc_ref=ARSTg5E1NqhIUVhC3cF73vSbi0pULvCS0vML_fmkW0qF1X5wcJFAHHSLgVqR-4a7MWM&fref=nf">
+                        <img src="img/FB.svg">
+                    </a>
+                    </div>
+        </footer>
+ </div>
+       
+       <div class="right-menu">
+
+             <div class="cross"><label for="nav-trigger" class="lbl">+</label></div>   
+            <div class="items" >
+                <div class="active">
+                   <a href="index.html"> Главная</a>
+                </div>
+                    <div>
+                        <a href="subjects.html">Предметы и стоимость</a>
+                    </div>
+                    <div >
+                        <a href="teachers.html">Преподаватели</a>
+                    </div>
+                    <div>
+                    <a href="results.html">Результаты</a>                      
+                    </div>
+                    <div>
+                    <a href="reviews.html">Отзывы</a>
+                    </div>
+                    
+                    <div>
+                        <a href="#feedback">
+                        Контакты
+                         </a>
+                    </div>
+               
+            </div>
+        </div>
+        <script type="text/javascript">
+        let key=0;
+        let el;
+    $(document).ready(function(){
+
+
+
+
+$('.scroll').on('click', function(e){
+
+    $('html,body').css(  'overflow','hidden');
+    $('html,body').css(  'overflow-x','hidden');
+    $('html,body').css(  'overflow-y','hidden');
+    if(window.innerWidth<1170){
+        $('html,body').scrollTop(6100);
+    }
+    else{
+        $('html,body').scrollTop(5400);
+    }
+ 
+
+
+    $('html,body').css(  'overflow-y','scroll');
+  e.preventDefault();
+});
+
+
+
+ 
+        var popup = document.querySelector(".popup__overlay__msg");
+
+var close = document.querySelector(".close");
+
+
+popup.addEventListener("click", function(event) {
+  e = event || window.event
+  if (e.target == this) {
+    popup.classList.add("hidden");
+  }
+});
+
+        var popup = document.querySelector(".popup__overlay__subject");
+
+var close = document.querySelector(".close");
+
+
+popup.addEventListener("click", function(event) {
+  e = event || window.event
+  if (e.target == this) {
+    popup.classList.add("hidden");
+  }
+});
+
+$('.cls').click(function(){
+        popup.classList.add("hidden");
+})
+close.addEventListener("click", function(event){
+    event.preventDefault();
+    popup.classList.add("hidden");
+});
+
+})
+
+      
+    </script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="generatorDOM.js"></script>
+        <script type="text/javascript">
+            
+      
+$('.send').click(function (){
+   if($('#class').attr('style')!=undefined)
+   {
+    if(window.innerWidth>1170)
+    {
+        if($('#class').attr('style').indexOf("rgb(4, 224, 0)")!=-1 && $('#subject').attr('style').indexOf("rgb(4, 224, 0)")!=-1  && $('#telephone').attr('style').indexOf("rgb(4, 224, 0)")!=-1  && $('#name').attr('style').indexOf("rgb(4, 224, 0)")!=-1)
+        {
+        console.log($('#telephone').val());
+        console.log($('#class h3').text())   
+         console.log($('#name').val())  
+          console.log($('#subject h3').val())  
+              $.ajax({
+  url: "procesing.php",
+  method: 'post',
+    data: {name: $('#name').val(),
+        telephone: $('#telephone').val(),
+        class: $('#class h3').text(),
+        subject: $('#subject h3').text()
+
+},
+  async: false,
+  success: function(data){
+    var popup = document.querySelector(".popup__overlay__msg");
+    popup.classList.remove("hidden");
+    fbq('track', 'Lead');
+   
+ 
+
+    }
+        
+  
+});
+          }
+          else{
+            $('.error').css('display','block')
+          }
+    }
+    else    {
+        if($('#class-adaptive').attr('style').indexOf("rgb(4, 224, 0)")!=-1 && $('#subject-adaptive').attr('style').indexOf("rgb(4, 224, 0)")!=-1  && $('#telephone-adaptive').attr('style').indexOf("rgb(4, 224, 0)")!=-1  && $('#name-adaptive').attr('style').indexOf("rgb(4, 224, 0)")!=-1)
+        {
+        console.log($('#telephone-adaptive').val());
+        console.log($('#class-adaptive h3').text())   
+         console.log($('#name-adaptive').val())  
+          console.log($('#subject-adaptive h3').text())  
+              $.ajax({
+  url: "procesing.php",
+  method: 'post',
+    data: {name: $('#name-adaptive').val(),
+        telephone: $('#telephone-adaptive').val(),
+        class: $('#class-adaptive h3').text(),
+        subject: $('#subject-adaptive h3').text()
+
+},
+  async: false,
+  success: function(data){
+    var popup = document.querySelector(".popup__overlay__msg");
+    popup.classList.remove("hidden");
+    fbq('track', 'Lead');
+ 
+
+    }
+        
+  
+});
+    }
+    else{
+        $('.error').css('display','block')
+    }
+}
+}
+else
+{
+    $('.error').css('display','block')
+}
+    
+})
+            $(document).ready(function(){
+         
+
+
+
+        $("ul").hide();
+        $(".box").click(function(){
+         
+              $(this).parent().children('.send-request-subject').css('display', 'none');
+             $(this).parent().children('.calculate').css('display', 'flex');
+            let node = $(this).children("h3").children("span");
+            node.parent().parent().css("opacity", "1");
+            if(!(node.parent().parent().attr('style').indexOf("color: black; height: auto; border-radius: 21px;") !=-1 ||  node.parent().parent().attr('style').indexOf("color: black; height: auto; border-radius: 35px;") !=-1))
+            {  
+                
+                node.parent().parent().css("color", "black");
+                node.children("img").css("transform", "rotate(180deg)");
+                node.parent().parent().css("height", "auto");
+                if(node.parent().parent().attr('class')!="box box-req")
+                {
+                    node.parent().parent().css("border-radius", "21px");
+                }
+                else
+                {
+                    node.parent().parent().css("border-radius", "35px");
+                }
+                node.parent().parent().parent().children(".button-2").css("display", "none");
+               
+            node.parent().next().css("display","block");
+            
+            
+            }
+            else{
+                node.children("img").css("transform", "rotate(360deg)");               
+               
+               
+                node.parent().parent().css("border-radius", "67px");
+                if(node.parent().parent().attr('class')!="box box-req")
+                {
+                    node.parent().parent().css("height", "44px");  
+                }
+                else
+                {
+                    if(window.innerWidth<1170)
+                        node.parent().parent().css("height", "50px");
+                    else
+                    node.parent().parent().css("height", "70px");
+                    node.parent().parent().css("color", "#898989");                    
+                }
+                     
+                node.parent().parent().parent().children(".calculate").css("display", "flex");
+                node.parent().next().css("display","none");
+                
+            }
+        });
+        $(".box ul li").click(function(eventObject){
+            $(this).parent().parent().children("h3").html(eventObject.target.innerText + '<span class="expand subject-expand"><img src="img/swipe.svg" ></span>');
+            $(this).parent().parent().css("border-color", "#04E000")
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+                 $(".button-calculator").click(function(){
+            if($(this).next().attr('style')=="display: none;")
+            {
+                    $(this).next().slideToggle();
+        }
+            else
+            {
+                    $(this).next().slideUp();
+            }
+        
+
+        })
+ 
+    
+
+                $('.courusel-tech').slick({dots: true,
+            responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+        {
+      breakpoint: 690,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+    ]
+        });
+         $('.courusel-gym').slick({dots: true,
+            responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+        {
+      breakpoint: 690,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+    ]
+        });
+          $('.courusel-lang').slick({dots: true,
+            responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+        {
+      breakpoint: 690,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+    ]
+        });
+        $('.courusel').slick({dots: true,
+            responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+        {
+      breakpoint: 690,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+    ]
+        });
+        $('.courusel-main').slick({
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true,
+            prevArrow: '<img class="prev" src="img/leftarrow.svg">',
+            nextArrow: '<img class="next" src="img/rightarrow.svg">',
+            responsive: [
+             {
+        breakpoint: 1170,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+         }
+    }]
+        });});
+
+        </script>
+    </body>
+</html>
+<script type="text/javascript" src="validation.js"></script>
+<script type="text/javascript" src="request.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+ 
+function init(){
+    var myMap = new ymaps.Map("map", {
+        center: [53.871817, 27.466313],
+        zoom: 12,
+        controls: [] // Убираем все элементы управления
+    });
+    var myPlacemark = new ymaps.Placemark([53.906061, 27.542383], {
+
+        });
+     myMap.geoObjects.add(myPlacemark);
+
+     myMap.geoObjects.add(myPlacemark);
+    var myPlacemark = new ymaps.Placemark([53.888648, 27.524551], {
+            // Хинт показывается при наведении мышкой на иконку метки.
+   
+        });
+     myMap.geoObjects.add(myPlacemark);
+    var myPlacemark = new ymaps.Placemark([52.719888, 25.346433], {
+            // Хинт показывается при наведении мышкой на иконку метки.
+
+        });
+
+ 
+        // После того как метка была создана, добавляем её на карту.
+        myMap.geoObjects.add(myPlacemark);
+}
+ 
+ setTimeout(()=>{
+
+    $(".calculate").click(function(){
+    var sum=0;
+    var k=0;
+    var node;
+
+    if(!$(this).parent().attr("groupCost"))
+{
+    node = $(this).parent().parent();
+}        
+else
+{
+     node = $(this).parent();
+}
+    if($(this).parent().children(".format").children("h3").text()=="Индивидуальные")
+        sum+=parseInt(node.attr("indCost"));
+   else if($(this).parent().children(".format").children("h3").text()=="Мини-группы")
+        sum+=parseInt(node.attr("groupCost"));
+    else
+        k++;
+    if($(this).parent().children(".type").children("h3").text()=="Вживую (Минск)")
+        sum+=parseFloat(node.attr("irlCostMinsk"));
+   else if($(this).parent().children(".type").children("h3").text()=="Онлайн")
+        sum+=parseInt(node.attr("onlineCost"));
+    else if($(this).parent().children(".type").children("h3").text()=="Вживую (Барановичи)")
+        sum+=parseInt(node.attr("irlCostBar"));
+    else if($(this).parent().children(".type").children("h3").text()=="Вживую (Ивацевичи)")
+        sum+=parseInt(node.attr("irlCostIva"));
+    else
+        k++;
+    if($(this).parent().children(".program").children("h3").text()=="Подготовка к ЦТ (11 класс)")
+        sum+=parseFloat(node.attr("schoolCost"));
+  else  if($(this).parent().children(".program").children("h3").text()=="Школьная программа")
+        sum+=parseFloat(node.attr("сtCost"));
+    else
+        k++;
+    if(k==0)
+    {
+$(this).next().css('display', 'flex');
+$(this).css('display', 'none');
+ $(this).parent().children(".cost-body").html("*Стоимость указана в бел. руб.")
+    $(this).parent().children(".cost-header").html(sum+"р/час")
+    $(this).parent().children(".cost-header").css("display", "block");
+    $(this).parent().children(".cost-body").css("display", "block");
+    $(this).parent().children(".cost-body").css("left", "70px");
+      $(this).parent().children(".cost-body").css("margin-top", "0px");
+    $(".send-request-subject").click(function(){
+               var popup = document.querySelector(".popup__overlay__subject");
+               
+ $('.error').css('display','none');
+                popup.classList.remove("hidden");
+               
+     })
+    }
+    else
+    {
+        $(this).parent().children(".cost-body").html("<div class='sbj-error'>Пожалуйста, выберите все параметры</div>")
+        
+    $(this).parent().children(".cost-body").css("display", "block");
+     $(this).parent().children(".cost-body").css("left", "0px");
+      $(this).parent().children(".cost-body").css("margin-top", "60px");
+    }
+    });
+
+ }, 1000)
+
+</script>
+
+      <script>
+
+
+
+
+
+
+
+
+
+
+
+
+        'use strict';
+        var multiItemSlider = (function () {
+          return function (selector, config) {
+            var
+              _mainElement = document.querySelector(selector), // основный элемент блока
+              _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+              _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+              _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+              _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+              _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+              _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+              _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+              _positionLeftItem = 0, // позиция левого активного элемента
+              _transform = 0, // значение транфсофрмации .slider_wrapper
+              _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+              _items = []; // массив элементов
+            // наполнение массива _items
+            _sliderItems.forEach(function (item, index) {
+              _items.push({ item: item, position: index, transform: 0 });
+            });
+    
+            var position = {
+              getMin: 0,
+              getMax: _items.length - 1,
+            }
+    
+            var _transformItem = function (direction) {
+              if (direction === 'right') {
+                if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+                  return;
+                }
+                if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+                  _sliderControlLeft.classList.add('slider__control_show');
+                }
+
+                _positionLeftItem++;
+                _transform -= _step;
+              }
+              if (direction === 'left') {
+                if (_positionLeftItem <= position.getMin) {
+                  return;
+                }
+                if (!_sliderControlRight.classList.contains('slider__control_show')) {
+                  _sliderControlRight.classList.add('slider__control_show');
+                }
+
+                _positionLeftItem--;
+                _transform += _step;
+              }
+              _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+            }
+    
+            // обработчик события click для кнопок "назад" и "вперед"
+            var _controlClick = function (e) {
+              if (e.target.classList.contains('slider__control')) {
+                e.preventDefault();
+                var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+                _transformItem(direction);
+              }
+            };
+    
+            var _setUpListeners = function () {
+              // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+              _sliderControls.forEach(function (item) {
+                item.addEventListener('click', _controlClick);
+              });
+            }
+    
+            // инициализация
+            _setUpListeners();
+    
+            return {
+              right: function () { // метод right
+                _transformItem('right');
+              },
+              left: function () { // метод left
+                _transformItem('left');
+              }
+            }
+    
+          }
+        }());
+    
+        var slider = multiItemSlider('.slider-container')
+        var slider2 = multiItemSlider('.slider-container-2')+
+    
+
+
+      </script>
+       <script type="text/javascript" src="popup.js"></script>
+       <script type="text/javascript" src="sendpop.js"></script>
+       
