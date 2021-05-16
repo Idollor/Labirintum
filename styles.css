@@ -1,0 +1,2272 @@
+@font-face {
+  font-family: Montserrat; /* Гарнитура шрифта */
+  src: url(../fonts/montserrat.ttf); /* Путь к файлу со шрифтом */
+ }
+ @font-face {
+  font-family: MontserratMD; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
+ }
+ @font-face {
+  font-family: MontserratRG; /* Гарнитура шрифта */
+  src: url(../fonts/Montserrat-Regular.ttf); /* Путь к файлу со шрифтом */
+ }
+ @font-face {
+  font-family: Oswald; /* Гарнитура шрифта */
+  src: url(../fonts/OswaldMedium.ttf); /* Путь к файлу со шрифтом */
+ }
+  @font-face {
+  font-family: OswaldRG; /* Гарнитура шрифта */
+  src: url(../fonts/Oswald-Regular.ttf); /* Путь к файлу со шрифтом */
+ }
+ html,
+body{
+  font-family: Montserrat;
+  font-style: normal;
+  overflow-x: hidden;
+  
+}
+.slick-slide{
+height: auto !important;
+}
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #4EAFF1;
+  height: 100px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+  color: #fff;
+  align-items: center;
+
+  
+}
+.right-menu{
+  color: white;
+  position: fixed;
+  padding-top: 80px;
+
+  right: 0%;
+  transition: 0.5s;
+  background: #222426;
+  height: 100%;
+  width: 400px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.right-menu div div{
+ font-size: 20px;
+line-height: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+
+
+}
+.cross{
+ 
+position: absolute;
+top: 25px;
+left: 300px;
+  font-size: 65px;
+line-height: 35px;
+color: #FFFFFF;
+transform: rotate(45deg);
+
+}
+.nav-container{
+  width: 90%;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+.logo{
+
+}
+.burger{
+  display: none;
+}
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  margin-left: 123px;
+  margin-right: 123px;
+  flex-grow: 3;
+  justify-content: space-between;
+  align-items: center;
+  font-family: MontserratMD;
+  font-size: 18px;
+}
+.order-form input{
+  font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    width: 464px;
+    height: 70px;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 67px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    color: black;
+}
+.nav-menu-element{
+  margin-left: 48px;
+
+}
+.nav-menu :first-child{
+  margin-left: 0px;
+  
+  
+  
+}
+.contacts{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contacts div img
+{
+  margin-right: 15px;
+}
+.humburger{
+  flex-grow: 1;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #222426;
+  padding-bottom: 55px;
+  align-items: center;
+
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1320px;
+  justify-content: space-between;
+}
+.footer-column{
+  max-width: 320px;
+  color: #fff;
+
+  
+}
+.footer-header{
+  font-family: OswaldRG;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 44px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.footer-element{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+opacity: 0.7;
+margin-bottom: 10px;
+}
+.socials{
+  margin-top: 47px;
+  display: flex;
+  justify-content: space-around;
+}
+.teachers-page{
+  background: #FAFAFA;
+
+
+}
+.teacher-block-personal{
+  background-color: white;
+  border-radius: 10px;;
+  padding-right: 0px;
+
+}
+.teachers-block
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.teachers-page-wrapper
+{
+  width: 90%;
+  max-width: 1320px;
+  z-index: 1;
+
+}
+main{
+  width: 100%;
+
+  background: url(../img/mainbg.jpg) no-repeat center center;
+  background-position: 0 0;
+  background-position-x: 60%;
+  background-size: 1400px;
+  display: flex;
+  justify-content: center;
+  background-color: #FAFAFA;;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.main-teachers{
+  margin-top: 70px;
+}
+.main-page{
+  margin-top: 160px;
+  height: 100%;
+  max-width: 1320px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.title-info{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 30px;
+max-width: 780px;
+}
+.logical{
+  color: #4EAFF1;
+ 
+
+}
+.subject-expand{
+  margin-right: 35px;
+}
+.logical-2{
+  font-family: MontserratMD !important;
+}
+.slog-info{
+  font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 70px;
+line-height: 80px;
+max-width: 780px;
+margin-top: 15px;
+}
+.opis-info{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 35px;
+margin-top: 55px;
+max-width: 740px;
+margin-bottom: 40px;
+}
+.error{
+  margin-top: 10px;
+  text-align: center;
+  color: red;
+  display: none;
+
+}
+.feedback{
+  margin-bottom: 70px;
+}
+.teachers-page-wrapper .header-teachers{
+  margin-top: 70px;
+}
+.feedback-forms .box{
+  display: none;
+}
+.feedback-forms .box{
+  width: 320px;
+}
+.button{
+  transition: 0.4s;
+  cursor: pointer;
+  width: 340px;
+  height: 70px;
+  background: #4EAFF1;
+border-radius: 67px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+color: #fff;
+}
+.button:hover{
+  background: #6BC3FF;;;
+}
+.button:active{
+  background-color:#4EA7E3 !important;
+}
+.button-2:hover{
+  background: #4EAFF1;
+  border: 1px white solid;
+  color: #FFFFFF;
+}
+.button-2:active{
+  background-color: #4EA7E3 !important;
+}
+.lessons{
+  margin-top: 307px;
+}
+.lesson .button-2{
+  margin-top: 20px;
+}
+.header-lessons{
+  font-family: Oswald;
+font-style: normal;
+
+
+font-size: 45px;
+line-height: 55px;
+margin-bottom: 25px;
+/* or 222% */
+
+
+text-align: center;
+}
+.teacher-block-personal{
+margin-bottom: 30px;
+}
+.cost-header{
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end;
+  font-family: MontserratMD;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 55px;
+    z-index: 1;
+    width: 150px;
+    left: 180px;
+    display: none;
+}
+.cost-body{
+  font-family: Montserrat;
+    font-style: normal;
+      position: relative;
+      left: 70px;
+    font-weight: 500;
+    font-size: 14px;
+    bottom: 55px;
+    display: none;
+}
+.teachers{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-teachers{
+   font-family: Oswald;
+font-style: normal;
+font-size: 45px;
+text-align: center;
+margin-bottom: 70px;
+}
+.header-aboutUs{
+     font-family: Oswald;
+font-style: normal;
+font-size: 45px;
+text-align: center;
+margin-bottom: 70px;
+}
+.header-lessons-2{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+margin-bottom: 50px;
+}
+.info-lessons{
+  font-family: MontserratMD;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+padding-left: 15px;
+margin-bottom: 15px;
+/* or 139% */
+
+
+/* Gray1 */
+
+color: #737373;
+}
+.wrapper-lessons{
+  display: flex;
+  flex-direction: column;
+}
+.row-lessons{
+  display: flex;
+  flex-direction: row;
+
+}
+.row-lessons div{
+margin-right: 35px;
+
+}
+.lesson{
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  max-width: 308px;
+
+}
+.img-lesson{
+  border-radius: 10px;
+  width: 308px;
+  height: 220px;
+}
+.img-teacher{
+  width: 337px;
+}
+.img-teacher-personal img{
+  width: 300px;
+}
+.img-tchr img{
+  width: 336px;
+  height: 350px;
+}
+.img-teacher img{
+  width: 100%;
+}
+.title-lesson{
+  font-family: OswaldRG;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 40px;
+display: flex;
+align-items: center;
+padding-left: 15px;
+margin-top: 22px;
+margin-bottom: 15px;
+}
+.box {
+	width: 250px;
+	background: #fff;
+	border: 1px solid #CACACA;
+box-sizing: border-box;
+border-radius: 67px;
+width: 308px;
+height: 44px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+margin-top: 0px;
+margin-bottom: 10px;
+cursor: pointer;
+flex-shrink: 0;
+
+	}
+h3 {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-left: 21px;
+  
+
+  width: 100%;
+	}
+h3 span {
+	float: right;
+  cursor: pointer;
+ margin-right: 25px;
+  border-radius: 20px;
+  width:20px;
+  
+ 
+  
+
+	}
+h3 span:hover {
+	text-shadow: 0px 0px 3px #a1eeff;
+	}
+
+ul {
+/*
+	overflow: hidden;
+  margin:0;
+  width: 306px;
+  background-color: #fff;
+  padding-bottom: 10px;
+  left:93px;
+  
+  border-radius: 0px 0px 30px 30px;
+  border: 1px solid #CACACA;
+  border-top: 0px;
+  */
+  
+
+	}
+  .socials-adaptive{
+  display: none;
+}
+ul li {
+  padding-left: 21px;
+  margin-top: 15px;
+  cursor: pointer;
+  z-index: 10;
+  }
+  ul li:last-child {
+    margin-bottom: 15px;
+    }
+    .button-2{
+      transition: 0.4s;
+      font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+width: 170px;
+height: 44px;
+color: #4EAFF1;
+border: 1px solid #4EAFF1;
+box-sizing: border-box;
+border-radius: 67px;
+cursor: pointer;
+margin-bottom: 10px;
+flex-shrink: 0;
+background-color: white;
+    }
+.aboutUs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 110px;
+
+}
+.row-aboutUs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 1315px;
+}
+.block-aboutUs{
+  display: flex;
+  flex-direction: column;
+  width: 645px;
+
+
+background: #FFFFFF;
+/* stroke */
+
+border: 1px solid #CACACA;
+box-sizing: border-box;
+border-radius: 10px;
+margin-bottom: 30px;
+
+padding: 20px;
+padding-left: 103px;
+}
+.column-header{
+  font-family: MontserratMD;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.control-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+.control-buttons div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+.header-columns{
+  margin-bottom: 35px;
+}
+.header-columns tr td{
+  text-align: -webkit-center;
+}
+.row-lessons{
+  margin-bottom: 47px;
+  height: 526px;
+}
+.info-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info-header{
+font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+line-height: 67px;
+
+  }
+  .table-wrapper{
+    margin-top:110px;
+  }
+  .table-header{
+    display: flex;
+    justify-content: center;
+    font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+line-height: 67px;
+margin-bottom: 60px;
+  }
+  .info-body{
+max-width: 610px;
+margin-top: 40px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+  }
+  .header-column{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 125% */
+
+text-align: center;
+
+/* Black */
+
+color: #121111;
+}
+.cursor{
+  display: none;
+}
+td .button-2 , td .button{
+  font-size: 18px;
+line-height: 22px;
+  width: 210px;
+height: 46px;
+  margin-top: 18px;
+}
+.control-column-1{
+  margin-right: 147px;
+}
+.head-block-aboutUs{
+font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 44px;
+margin-bottom: 25px;
+color: #121111;
+}
+.table{
+  display: flex;
+  flex-direction: column;
+}
+.row-header .cell div{
+
+  border: none;
+  text-align: center;
+  padding: 0px;
+  font-family: MontserratMD;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+
+}
+.row-header .cell-skidka div{
+margin-left: 15px;
+margin-right: 15px;
+  }
+  .row-header .cell-status div{
+margin-left: 15px;
+margin-right: 15px;
+  }
+.cell{
+    border: 1px black solid;
+    vertical-align: middle !important;
+    max-width: 900px;
+}
+.feedback-index{
+  display: none;
+}
+.cell div{
+
+  min-height: 75px !important;
+  height: auto;
+  padding-left: 20px;
+padding-right: 10PX;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+}
+.cell-info div{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+table{
+  width: 100%;
+}
+.cell-skidka div{
+  text-align: center;
+  padding: 0px;
+}
+.cell-status div{
+
+  align-items: center;
+  align-content: center;
+  padding: 0px;
+}
+.cell-status div img{
+
+  width: 40px;
+}
+table .row{
+
+}
+.active{
+  background-color:  #0098FF;
+}
+.anotation{
+  font-family: MontserratMD;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+margin-top:20px;
+max-width: 850px;
+margin-left: 20px;
+}
+.row-header .cell{
+  border: none;
+}
+.text-block-aboutUs
+{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+}
+.btnAboutUs{
+vertical-align: middle;
+margin-bottom: 110px;
+}
+.block-teacher{
+  display: flex;
+  
+  background-color: #FFFFFF;
+  flex-direction: column;
+  width: 338px;
+
+box-sizing: border-box;
+border-radius: 10px;
+max-width: 336px !important;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.block-teacher .button-2{
+margin: 0 auto;
+margin-bottom: 37px;
+width: 272px;
+height: 56px;
+font-size: 20px;
+line-height: 24px;
+margin-top: 25px;
+}
+.dogovor-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  }
+  .dogovor-wrapper .button{
+    margin-top: 40px;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 226px;
+height: 70px;
+padding-left: 57px;
+padding-right: 57px;
+  }
+  .rekv{
+    margin-top: 72px;
+  }
+  .rekv-header{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+  }
+  .rekv-info{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+margin-top:30px;
+/* or 150% */
+}
+.background-text{
+  position: absolute;
+  font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 265px;
+
+z-index: 0;
+color: #4EAFF1;
+
+opacity: 0.05;
+width: 100%;
+text-align: center;
+top: 189px;
+          /**
+             * Для эксплорера
+             */
+            -ms-user-select: none;
+
+            /**
+             * Для мозилы
+             */
+            -moz-user-select: none;
+
+            /**
+             * Для конкверора
+             */
+            -khtml-user-select: none;
+
+            /**
+             * Для Сафари и Хрома
+             */
+            -webkit-user-select: none;
+  }
+.dogovor-header{
+  font-size: 45px;
+line-height: 67px;
+text-align: center;
+
+font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+line-height: 67px;
+margin-top:110px;
+  }
+.lesson-tchr{
+  padding-left: 15px;
+  font-family: MontserratRG;
+font-style: normal;
+font-size: 18px;
+line-height: 22px;
+
+color: #4EAFF1;
+margin-top: 10px;
+margin-bottom: 0px;
+}
+.teacher-info-header{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.info-teacher-personal{
+margin-right: 12px;
+ margin-left: 20px; 
+}
+.info-teacher-personal .name-tchr{
+  padding: 0px;
+  font-size: 30px;
+  line-height: 40px;
+
+}
+.teacher-block-personal{
+  max-width: 645px;
+  
+  width: 645px;
+}
+p{
+  margin-top: 15px;
+}
+.teacher-bio{
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 18px;
+line-height: 25px;
+margin-right: 20px;
+padding-top: 0px;
+padding-bottom: 20px;
+
+}
+.info-teacher-personal .lesson-tchr{
+  padding: 0px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.info-teacher-personal .achv-tchr{
+  padding: 0px;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+.name-tchr{
+  padding-left: 15px;
+  margin-bottom: 10px;
+  font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 52px;
+
+
+}
+.achv-tchr{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.achv-tchr .ach{
+font-size: 16px;
+line-height: 20px;
+}
+.ach{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+}
+.ach div img{
+  margin-right: 15px;
+}
+.slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-container-2{
+  display: flex;
+  justify-content: center;
+}
+.results{
+
+}
+
+.courusel .slick-dots{
+    bottom: -35px;
+}
+.slider-cour-main-2 .courusel-main .slick-arrow{
+  margin-top: 45px;
+}
+.slick-arrow{
+  cursor: pointer;
+}
+.prev{
+  height: 45px !important;
+  margin-right: 30px !important;
+}
+.next{
+  height: 45px !important;
+  margin-left: 30px !important;
+}
+.slider-cour{
+  display: none;
+  width: 358.5px;
+}
+.slider-cour-main{
+/* */
+  width: 1219.5px;
+}
+.slider-cour-main-2{
+  /* */
+    width: 1291.5px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+.slider-cour-2{
+  display: none;
+  width: 387px;
+}
+.slider-cour-2 .courusel .slick-dots{
+  position: relative;
+}
+.slider-cour-main-2 .courusel-main .slick-dots{
+  position: absolute;
+  bottom: -55px;
+}
+.slider-cour-main .courusel-main .slick-dots{
+  position: absolute;
+  bottom: -50px;
+}
+.slick-dots{
+  display: block !important;
+}
+.slick-dots li button::before{
+  content: "" !important;
+}
+
+.review-block
+{
+  width: 645px;
+height: auto;
+padding: 20px;
+border: 1px solid #F2F2F2;
+/* stroke */
+background-color: white;
+box-sizing: border-box;
+border-radius: 10px;
+margin-top: 30px;
+}
+.header-review{
+  display: flex;
+  flex-direction: row;
+
+}
+.header-reviews{
+  font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 55px;
+
+text-align: center;
+}
+.slider-header{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+margin-bottom: 10px;
+color: #4EAFF1;
+margin-left: 20px;
+}
+.sbj-error{
+  color: red;
+}
+.reviews-slogan{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+margin-top: 25px;
+margin-bottom: 25px;
+/* identical to box height, or 150% */
+
+text-align: center;
+}
+.review-date{
+  font-size: 14px;
+line-height: 14px;
+margin-top: 15px;
+/* or 214% */
+
+
+/* Black */
+
+color: #121111;
+opacity: 0.5;
+}
+.results-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.results-row {
+margin-bottom: 40px;
+  }
+.feedback-results{
+  margin-top: 70px !important;
+}
+.results-row-adaptive{
+display: flex;
+flex-direction: row;
+flex-grow: 0;
+flex-shrink: 0;
+padding-bottom: 10px;
+display: none;
+}
+.results-row-adaptive div{
+  flex-grow: 0;
+flex-shrink: 0;
+
+  }
+.result-adaptive-wrapper{
+display: flex;
+  width: 389px;
+  overflow: auto;
+
+}
+.result-adaptive-wrapper::-webkit-scrollbar {
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: none;
+}
+.result-adaptive-wrapper::-webkit-scrollbar-thumb {
+    background-color: #4EAFF1;
+    border-radius: 9em;
+
+    width: 10px;
+}
+.reviewer-name{
+  font-size: 18px;
+line-height: 10px;
+}
+.review-info{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  margin-left: 11px;
+}
+.results-slogan{
+margin-bottom: 70px;
+
+  }
+
+  .button-calculator{
+    margin-top: 5px !important;
+    width: 170px;
+height: 44px;
+font-size: 18px;
+line-height: 22px;
+  }
+.slick-dots li button{
+  padding: 0px !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50px !important;
+  border: 2px solid #4EAFF1 !important;
+}
+.slick-active button{
+  background-color: #4EAFF1 !important;
+}
+.header-results{
+
+  font-family: Oswald;
+font-style: normal;
+
+font-size: 45px;
+line-height: 55px;
+margin-bottom: 30px;
+text-align: center;
+}
+.text-review{
+  margin-top: 20px;
+  font-family: MontserratRG;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+/* or 156% */
+
+
+/* Black */
+
+color: #121111;
+
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #CACACA;
+box-sizing: border-box;
+border-radius: 9px;
+width: 367px;
+
+}
+.img-student{
+  border-radius: 10px 10px 0px 0px;
+  width: 367px;
+height: 289px;
+}
+.img-student img{
+  width: 359px;
+}
+.result{
+
+  max-width: 361px !important;
+}
+.result-student{
+  margin-left:15px;
+  font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 37px;
+display: flex;
+align-items: center;
+
+}
+.name-student{
+  font-family: MontserratMD;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+margin-bottom: 10px;
+margin-left:15px;
+}
+.cert-student img{
+  width: 359px;
+  border-radius: 0px 0px 10px 10px;
+}
+.header-contacts{
+  font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 50px;
+/* or 222% */
+
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-bottom: 50px;
+}
+.contacts-section{
+  margin-top: 110px;
+  background: url(../img/backcon.png) no-repeat center center;
+  background-position: bottom;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+ width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+ 
+}
+.slider-lessons{
+  width: 348px;
+  display: none;
+
+}
+.wrapper-contacts{
+
+
+  max-width: 1320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  width: 1140px;
+
+}
+.buttons-result
+{
+  display: flex;
+  justify-content: center;
+
+}
+.buttons-result div
+{
+  display: flex;
+  margin: 20px;
+  width: 272px;
+  height: 56px;
+  
+}
+.header-reviews{
+  margin-top: 70px;
+}
+.header-contacts-2{
+  font-family: MontserratMD;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 60px;
+/* or 333% */
+
+display: flex;
+align-items: center;
+margin-top: 20px;
+}
+.right-forms{
+  display: flex;
+  flex-direction: column;
+}
+.telephones div{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+}
+.adres div{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 150%;
+
+/* Black */
+
+color: #121111;
+}
+
+.right-forms input, .feedback input{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+  width: 340px;
+  height: 70px;
+  border: 1px solid #CACACA;
+  box-sizing: border-box;
+border-radius: 67px;
+font-size: 20px;
+line-height: 24px;
+padding-left: 40px;
+margin-bottom: 15px;
+color: black;
+}
+.feedback input{
+  width: 420px;
+}
+.feedback-forms{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.feedback-forms .button{
+  width: 420px;
+  
+}
+.reviews-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feedback-header{
+  font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 30px;
+/* identical to box height, or 120% */
+margin-top: 110px;
+text-align: center;
+
+/* Black */
+
+color: #121111;
+margin-bottom: 40px;
+}
+.box-req{
+  padding-top: 9px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+  width: 340px;
+  height: 70px;
+  border: 1px solid #CACACA;
+box-sizing: border-box;
+  border-radius: 67px;
+  color: #898989;
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+input::placeholder {
+  color:#898989;
+}
+.input::-webkit-input-placeholder {color:#898989;;}
+input::-moz-placeholder {color:#898989;;}
+input:-moz-placeholder {color:#898989;;}
+input:-ms-input-placeholder {color:#898989;;}
+.box-req h3{
+  margin-left: 0px;
+}
+.box-req h3 span img{
+  width: 26px;
+}
+.box-req ul li{
+  padding-left: 0px;
+}
+.send-request{
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.courusel-main{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.calculate{
+  z-index: 100;
+}
+#map{
+
+  height: 530px;
+  width: 100%;
+}
+.nav-trigger{
+  display: none;
+}
+.nav-trigger:checked + label {
+    left: 259px;
+}
+.nav-trigger + label, .main-wrapper, .right-container{
+    transition: right 1s;
+}
+.main-wrapper{
+  right: 0px;
+  transition: right 1s;
+  z-index: 1;
+  
+  
+}
+.nav-trigger:checked ~ .main-wrapper{
+      position: absolute;
+     
+      right: 400px;
+}
+
+
+.nav-trigger + label, .second, .first{
+
+}
+@media screen and (max-width: 2100px) {
+  main{
+    background-position-x: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 1600px) {
+  .main-info div{
+    max-width: 850px;
+  }
+  .opis-info{
+    max-width: 530px !important;
+  }
+
+  
+}
+
+ 
+
+@media screen and (max-width: 1450px){
+.nav-menu {
+
+    font-size: 14px !important;
+    line-height: 17px;
+    margin-left: 120px !important;
+    margin-right: 120px !important;
+}
+  .background-text{
+    display: none;
+  }
+  .feedback-forms div{
+    padding-top: 2px;
+    height: 50px;
+  }  
+
+    .feedback-forms input{
+    height: 50px;
+  }
+
+  .review-block{
+      margin-top: 60px;
+  }
+  .slider-lessons div .slick-dots{
+      top: 220px;
+      height: 10px;
+
+  }
+
+  .row-lessons{
+    display: none;
+  }
+  .slider-lessons{
+    display: block;
+
+    width: 696px;
+
+
+  }
+  .lessons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .lesson{
+    display: flex !important;
+    align-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .lesson span{
+    padding: 0px;
+  }
+  .teachers-block{
+    display: none;
+  }
+  .feedback-forms{
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback-forms .box{
+    display: block;
+    
+  }
+  .info-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-wrapper .info-column:last-child{
+
+    margin-top: 40px;
+  }
+
+  .info-header{
+    text-align: center;
+  }
+  .review-block{
+    width: 320px;
+    padding-bottom: 0px;
+  }
+  .header-review img{
+    width: 50px;
+    margin-bottom: 25px;
+  }
+  .text-review{
+    margin-top: 1px;
+    font-size: 14px;
+line-height: 17px;
+position: relative;
+top: -40px;
+  }
+
+  .review-date{
+    text-align: center;
+  }
+  .header-review{
+    flex-direction: column;
+  
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: -45px;
+
+      }
+      .reviewer-name{
+
+      }
+  .reviews-wrapper{
+    flex-direction: column;
+  }
+  .feedback-forms input,  .feedback-forms div{
+    font-size: 16px;
+line-height: 20px;
+    width: 320px !important;
+  }
+  .teachers-page-wrapper .slider-cour{
+    display: block;
+  }
+  .teachers-page-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+  }
+  .teacher-bio{
+    font-size: 14px;
+line-height: 17px;
+
+  }
+  .teachers-page-wrapper .slider-cour .courusel .slick-dots
+  {
+    position: absolute !important;
+    top: 360px;
+    height: 50px;
+  }
+  .lesson-tchr-mob{
+    margin-top: 25px;
+  }
+  .slider-cour{
+    width: 710px;
+  }
+}
+
+
+@media screen and (max-width: 1450px) {
+.slider-cour-main-2{
+  display: none;
+}
+.result-adaptive-wrapper{
+display: flex;
+width: 750px;
+margin: auto;
+}
+.results-row-adaptive{
+  display: flex;
+}
+}
+   
+
+
+@media (min-width: 680px) and (max-width: 1300px)  {
+  .reviews-slogan{
+    width: 800px;
+        line-height: 30px !important;
+
+  }
+  .header-lessons-2{
+    font-size: 20px;
+line-height: 24px;
+width: 405px;
+margin-top: 10px;
+  }
+  .info-lessons{
+    margin-top: 20px;
+    font-size: 14px;
+line-height: 15px;
+width: 267px;
+  }
+  .reviews-wrapper{
+    flex-direction: row !important;
+  }
+  .result-adaptive-wrapper {
+    width: 700px !important;
+}
+.result{
+  width: 331px;
+  }
+  .img-student img {
+    width: 330px;
+}
+.cert-student img {
+    width: 330px;
+    border-radius: 0px 0px 10px 10px;
+}
+  .slick-dots li button {
+    padding: 0px !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50px !important;
+    border: 1px solid #4EAFF1 !important;
+}
+
+  main{
+      background: url(../img/mainbg.jpg) no-repeat top right !important;
+    background-position-x: 400px !important;
+    background-size: 1200px !important;
+
+  }
+
+.header-contacts-2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+    font-size: 30px;
+    line-height: 100px;
+  }
+  .title-info{
+    font-size: 20px !important;
+line-height: 24px !important;
+}
+.slog-info {
+    font-size: 50px !important;
+    line-height: 60px !important;
+    margin-top: 10px !important;
+        max-width: 600px !important;
+}
+.opis-info{
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  font-size: 20px !important;
+line-height: 35px !important;
+    max-width: 430px !important;
+
+}
+.lessons {
+    margin-top: 70px !important;
+}
+.header-lessons {
+    font-size: 40px !important;
+    line-height: 35px !important;
+    margin-bottom: 10px !important;
+}
+.main-page .button {
+    width: 340px !important;
+    height: 70px !important;
+    font-size: 20px !important;
+    line-height: 20px !important;
+}
+.header-teachers {
+    margin-bottom: 35px !important;
+    font-size: 45px !important;
+    line-height: 35px !important;
+}
+.block-aboutUs {
+    padding: 0px !important;
+    width: 645px !important; 
+    margin-bottom: 10px !important;
+}
+.head-block-aboutUs {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+
+    font-size: 30px !important;
+    line-height: 44px !important;
+}
+
+.text-block-aboutUs {
+    margin-left: 22px !important;
+    margin-right: 22px !important;
+    margin-bottom: 20px !important;
+    font-size: 14px;
+    line-height: 17px;
+    font-size: 18px !important;
+    line-height: 22px !important;
+}
+.nav-menu{
+  display: flex !important;
+  font-size: 14px !important;
+line-height: 17px;
+    margin-left: 25px !important;
+
+    margin-right: 0px !important;
+}
+.nav-menu-element {
+    margin-left: 15px !important; 
+}
+.contacts {
+    display: none;
+    }
+    .burger {
+    display: none !important;
+}
+.footer-container{
+      justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+}
+.footer-column{
+      min-width: 320px;
+}
+}
+
+@media (min-width: 1300px) and (max-width: 1450px) {
+  main {
+    background: url(../img/mainbg.jpg) no-repeat top right !important;
+    background-position: 100px 0 !important;
+  
+}
+.reviews-wrapper{
+  flex-direction: row;
+}
+}
+
+
+@media (min-width: 680px) and (max-width: 1150px) {
+  main {
+    background: url(../img/mainbg.jpg) no-repeat top right !important;
+    background-position-x: 100px !important;
+    background-size: 1000px !important;
+}
+}
+
+
+@media screen and (max-width: 1300px) {
+
+  .lbl{
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper-contacts{
+    width: 90%;
+    margin-bottom: 45px;
+  }
+  .slog-info{
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .nav-menu{
+    display: none;
+    
+  }
+  .nav-container{
+    justify-content: space-around;
+  }
+  .burger{
+    display: flex;
+  }
+     main{
+  width: 100%;
+  background: url(../img/mainbg.jpg) no-repeat center center;
+  background-position: 0 0px;
+
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+.results-row-adaptive{
+  display: flex;
+}
+.results-row{
+  display: none;
+}
+.cursor{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 330px;
+  margin-bottom: 20px;
+}
+.results-slogan{
+  margin-bottom: 15px;
+}
+.result-adaptive-wrapper{
+  width: 750px;
+}
+}
+
+@media screen and (max-width: 1170px) {
+.slider-cour-main{
+  display: none;
+}
+  .feedback-index{
+    display: block;
+  }
+  .dogovor-header{
+font-size: 35px;
+line-height: 35px;
+  }
+.cell div{
+  font-size: 20px;
+line-height: 30px;
+}
+  .main-page{
+    margin-top: 93px;
+  }
+  .header-reviews{
+    font-size: 35px;
+
+  }
+  .reviews-slogan{
+    font-size: 20px;
+line-height: 20px;
+  }
+.header-column{
+  font-size: 14px;
+line-height: 15px;
+}
+.info-header{
+  font-size: 35px;
+line-height: 35px;
+}
+.info-body{
+  font-size: 16px;
+line-height: 20px;
+}
+td .button-2 , td .button{
+  font-size: 14px;
+line-height: 17px;
+width: 150px;
+height: 40px;
+}
+  .title-info{
+    font-family: Montserrat;
+  }
+
+
+  .contacts{
+    font-size: 12px;
+line-height: 15px;
+  }
+  .slog-info{
+    font-size: 35px;
+line-height: 35px;
+margin-top: 0px;
+  }
+  .opis-info{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+line-height: 22px;
+  }
+  
+  .main-page .button{
+    width: 217px;
+    height: 45px;
+    font-size: 16px;
+line-height: 20px;
+  }
+  .lessons{
+    margin-top: 110px;
+  }
+  .header-lessons{
+    font-size: 35px;
+line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .header-lessons-2{
+    margin-bottom: 25px;
+  }
+  .info-lessons{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .aboutUs{
+    margin-top: 79px;
+  }
+  .header-aboutUs{
+    margin-bottom: 38px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .lbl{
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .right-forms{
+    display: none;
+  }
+
+
+  .header-contacts-2{
+    margin-top: 0px;
+  }
+
+  .header-contacts{
+    margin-bottom: 15px;
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+  .block-aboutUs{
+    padding: 0px;
+    width: 319px;
+    margin-bottom: 10px;
+  }
+  .head-block-aboutUs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+line-height: 30px;
+  }
+  .text-block-aboutUs{
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 20px;
+    font-size: 14px;
+line-height: 17px;
+  }
+  .block-aboutUs div{
+    text-align: center;
+  }
+  .btnAboutUs{
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+  }
+    .slider-container{
+  display: none !important;
+}
+  .slider-container-2{
+  display: none;
+}
+.teachers{
+  margin-top: 79px;
+}
+.header-teachers{
+  margin-bottom: 35px;
+  font-size: 35px;
+line-height: 35px;
+}
+.results{
+  margin-top: 70px;
+}
+.slider-cour-main{
+  font-size: 35px;
+line-height: 35px;
+}
+.btn-2-slider{
+  width: 150px !important;
+height: 40px !important;
+font-size: 12px;
+line-height: 15px;
+margin-top: 26;
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider-cour{
+  display: block;
+}
+.slider-cour-2{
+  display: block;
+  margin: auto 0;
+  
+}
+.contacts-section{
+  margin-top: 70px;
+}
+.header-contacts{
+  font-size: 35px;
+line-height: 35px;
+margin-bottom: 45px;
+}
+.header-contacts-2
+{
+  font-weight: 500;
+font-size: 20px;
+line-height: 50px;
+}
+.adres{
+  font-size: 16px;
+line-height: 20px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+
+  .result-adaptive-wrapper{
+    margin: 0px;
+  width: 389px;
+}
+   main{
+  width: 100%;
+  background: url(../img/mainbg.jpg) no-repeat center center;
+  background-position: 0 0;
+  background-position-x: -10px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: 540px;
+  display: flex;
+  justify-content: center;
+  background-color: #FAFAFA; 
+}
+
+.row-header .cell div{
+  font-size: 12px;
+  line-height: 23px;
+}
+.cell div{
+  font-size: 12px;
+}
+.title-info{
+  font-size: 12px;
+}
+.slog-info{
+  font-size: 25px;
+  margin-top: 0px;
+  width: 219px !important;
+}
+.main-page{
+  margin-top: 30px;
+}
+.info-lessons
+{
+  font-size: 12px;
+  line-height: 15px;
+}
+.header-results{
+  font-size: 35px;
+line-height: 35px;
+}
+.slider-cour-2{
+  padding-left: 18px;
+}
+.feedback-header{
+  font-size: 25px;
+line-height: 23px;
+margin-bottom: 15px;
+margin-top: 30px !important; 
+}
+.feedback-index{
+  width: 83%;
+}
+.slick-dots li{
+  width: 0px !important;
+  margin: 0 9px;
+}
+.slick-dots li button{
+  width: 8px !important;
+  height: 8px !important;
+}
+.slick-dots li button{
+  margin-bottom: 70px;
+}
+.table-wrapper{
+  margin-top: 70px;
+}
+.table-header{
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.anotation{
+  font-size: 12px;
+line-height: 12px;
+}
+.opis-info{
+  font-size: 14px;
+  width: 208px;
+}
+}
+@media screen and (max-width: 690px) {
+
+  .lesson-tchr{
+    margin-top: 25px;
+  }
+  .courusel .slick-dots{
+    bottom: 315px;
+  }
+  .control-column-1{
+    margin-right: 20px;
+  }
+  .column-header
+  {
+    font-size: 18px;
+  }
+  .control-buttons div .button-2, .control-buttons div .button{
+    width: 150px;
+  }
+.slider-cour{
+  width: 356.5px;
+}
+.slider-lessons {
+    width: 353px;
+}
+
+
+.footer-container{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer-column{
+  width: 180px;
+
+}
+.footer-header{
+  font-family: Oswald;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+
+text-align: left;
+margin-bottom: 23px;
+}
+.footer-element{
+  font-size: 12px;
+
+}
+.socials{
+  display: none;
+}
+.socials-adaptive {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+}
+
+  .teachers-page{
+    background: white !important;
+  }

@@ -1,0 +1,90 @@
+.popup__overlay, .popup__overlay__subject {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+  }
+  .popup__overlay__msg {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+  }
+  .order-form {
+      background: rgb(255, 255, 255);
+      border-radius: 14px;
+      box-shadow: 1px 0px 5px rgb(125, 125, 125);
+      box-sizing: border-box;
+      height: 600px;
+      width:800px;
+
+      margin: 50px auto;
+      position: relative;;
+      background: #FAFAFA;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+/* stroke */
+
+border: 1px solid #CACACA;
+box-sizing: border-box;
+border-radius: 10px;
+  }
+  .order-form .box-wrapp .box, .order-form .box-wrapp-2 .box{
+      margin-top: 15px;
+      width: 464px;
+height: 70px;
+
+  }
+  .order-form .box-wrapp{
+      z-index: 3;
+      position: absolute;
+      top: 183px;
+  }
+  .order-form .box-wrapp-2{
+    z-index: 2;
+    position: absolute;
+    top: 267px;
+}
+.order-form .button{
+    z-index: 1;
+    position: absolute;
+    width: 464px;
+    top: 382px;
+}
+  .close{
+      display: block;
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  .popup-header{
+    font-family: Oswald;
+      margin-top: 98px;
+      margin-bottom: 45px;
+      font-size: 35px;
+line-height: 40px;
+  }
+  .request-subject{
+    display: flex;
+    flex-direction: column;
+  }
+  .popup__overlay__subject .button{
+    top: 462px !important;
+  }
+  .popup__overlay__subject .box-wrapp-2{
+    top: 167px !important;
+  }
+    .popup__overlay__subject input{
+      width: auto !important;
+    }
